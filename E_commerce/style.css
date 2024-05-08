@@ -5,12 +5,50 @@
     margin: 0;
     padding: 0;
 }
-.body{
-    background-color: green;
-}
+
 .navbar ul{
     display:flex; 
-   /* align-items: center;
+   align-items: center;
     list-style-type:none;
-    height: 100px;*/
+    height: 100px;
+    background-color: rgba(255, 0, 21, 0.801);
+    justify-content: space-evenly;
+    
+    
+}
+.navbar ul li{
+    border: 2px solid transparent;
+}
+.navbar ul li:hover{
+    border: 2px solid white;
+}
+.search{
+height: 40px;
+width: 700px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: white;
+
+}
+.tab{
+    width: 10%;
+    height: 100%;
+    border: 1px;
+    margin: 0;
+    padding-left:0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.search-text{
+    width: 80%;
+    border: 10px;
+    
+}
+.search-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
 }
