@@ -80,4 +80,82 @@ border-bottom-right-radius: 5px;
     background-size:contain;
     height: 580px;
 }
+ nav{
+    height: 40px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 20px;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.product{
+    border: 2px solid black;
+    height: 400px;
+    width: 22%;
+  margin-top: 20px;
+padding: 10 10;
 
+
+}
+.product-img{
+    margin:10 4;
+    height: 80%;
+    background-size: cover;
+}
+.product-tab{
+    color:orange;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.product-tab p{
+    color: black;
+}
+.review-text{
+    display: flex;
+    justify-content: center;
+    margin: 30px 1px;
+}
+.review{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 17%;
+    margin-right: 18%;
+}
+.review-box{
+    border: 2px solid black;
+    height: 150px;
+    width: 20%;
+    padding-left: 6px;
+    background-color:gray;
+    color:white;
+}
+.review-name{
+    margin-bottom: 7px;
+}
+.foot{
+    height: 200px;
+    margin-top: 35px;
+    background-color: darkslategray;
+}
+.footer{
+    height: 40px;
+    width: 100%;
+    margin-top: 0.1px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
