@@ -6,13 +6,13 @@ let audioElement = new Audio('song/1.mp3');
 let masterPlay = document.getElementById('masterPlay')
 let myProgressBar = document.getElementById('myProgressBar');
 let songs = [
-    {songName : "Iraadey", filePath:"song/1.mp3",coverpath:"cover/1.jpg"},
-    {songName : "Gulaabi sadi", filePath:"song/2.mp3",coverpath:"cover/1.jpg"},
-    {songName : "Yours Eyes", filePath:"song/3.mp3",coverpath:"cover/1.jpg"},
-    {songName : "Keejo Kesari", filePath:"song/4.mp3",coverpath:"cover/1.jpg"},
-    {songName : "Beautifu things", filePath:"song/5.mp3",coverpath:"cover/1.jpg"},
-    {songName : "Until i found u", filePath:"song/6.mp3",coverpath:"cover/1.jpg"},
-    {songName : "Iraadey", filePath:"song/1.mp3",coverpath:"cover/1.jpg"}
+    {songName : "Iraadey", filePath:"song/1.mp3"},
+    {songName : "Gulaabi sadi", filePath:"song/2.mp3"},
+    {songName : "Yours Eyes", filePath:"song/3.mp3"},
+    {songName : "Keejo Kesari", filePath:"song/4.mp3"},
+    {songName : "Beautifu things", filePath:"song/5.mp3"},
+    {songName : "Until i found u", filePath:"song/6.mp3"},
+    {songName : "Iraadey", filePath:"song/1.mp3"}
 ]
 
 //audioElement.play();

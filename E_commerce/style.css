@@ -93,21 +93,29 @@ border-bottom-right-radius: 5px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    
+    transition: 0.5s;
 }
 .product{
     border: 2px solid black;
     height: 400px;
-    width: 22%;
+    width: 21%;
   margin-top: 20px;
 padding: 10 10;
 
 
 }
+.product:hover{
+    border: red;
+   transform: translateY(-7);
+}
 .product-img{
     margin:10 4;
     height: 80%;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 .product-tab{
     color:orange;
@@ -120,6 +128,16 @@ padding: 10 10;
 .product-tab p{
     color: black;
 }
+
+.offer{
+    background-image: url(photo/offer.png);
+    background-size: contain;
+    height: 700px;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+    margin-left: 17px;
+}
+
 .review-text{
     display: flex;
     justify-content: center;
