@@ -25,7 +25,11 @@
    justify-content: center;
 background-color:#7BB4C4;
 border-radius: 5px;
-color:#A10000;
+color:#261db8;
+}
+.navbar ul li a{
+    text-decoration: none;
+    
 }
 .navbar ul li:hover{
     border: 2px solid white;
@@ -44,7 +48,7 @@ width: 700px;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color:#55FBDC;
+background-color:#BAADD1;
 border-top-left-radius: 5px;
 border-bottom-left-radius: 5px;
 border-top-right-radius: 5px;
@@ -60,7 +64,7 @@ border-bottom-right-radius: 5px;
     justify-content: center;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    background-color:#55FBDC;
+    background-color:;
 }
 .search-text{
     width: 80%;
@@ -186,10 +190,22 @@ color:red;
 .review-comment{
     color: #A10000;
 }
+.foot2top{
+    height: 50px;
+    background-color:cadetblue;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+.foot2top a{
+    text-decoration: none;
+    color:brown;
+}
 .foot{
     height: 200px;
     width: 100%;
-    margin-top: 35px;
+    margin-top: 2px;
     padding-top: 25px;
     background-color: darkslategray;
     margin-right: 30px;
@@ -225,4 +241,42 @@ flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+/*----login----*/
+.login{
+   
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin: 200px 600px;
+    width: 280px;
+    height:270px;
+    background-color: #7BB4C4;
+}
+.login span{
+    padding-top: 0;
+    margi;
+    font-size: 30px;
+    align-self:;
+}
+.login a{
+    font-size: 15px;
+    margin-top: 15px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+form input{
+    margin: 10px 0;
+}
+.btn{
+    background-color:#FF714C;
+    width: 50px;
+    border-radius: 5px;
 }
