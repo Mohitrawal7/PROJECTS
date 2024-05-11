@@ -246,6 +246,7 @@ flex-direction: column;
 
 
 /*----login----*/
+
 .login{
    
     display: flex;
@@ -259,7 +260,6 @@ flex-direction: column;
 }
 .login span{
     padding-top: 0;
-    margi;
     font-size: 30px;
     align-self:;
 }
@@ -279,4 +279,97 @@ form input{
     background-color:#FF714C;
     width: 50px;
     border-radius: 5px;
+}
+
+
+
+/*----product page---*/
+
+.product-page{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+font-size: 40px;
+margin: 40px 0;
+}
+.product-page p{
+    width:160px;
+    display: flex;
+    justify-content: center;
+    background-color:#261db8;
+    color:white;
+    border-style: groove;
+    border-radius: 7px;
+}
+
+
+/*----cart-page----*/
+
+.cart-title{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+
+}
+.cart-title p{
+    width:260px;
+    display: flex;
+    justify-content: center;
+    background-color:#261db8;
+    color:white;
+    border-style: groove;
+    border-radius: 7px;
+}
+
+.cart{
+    margin: 20px 70px;
+    width: 91%;
+    height: 700px;
+    background-color: #FF714C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.topic{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 37px;
+    color: #A10000;
+    margin : 20px 621px;
+    border : 2px solid #55FBDC;
+}
+.cart-class{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cart-image {
+    background-image: url(photo/bracelet.jpeg);
+    height: 610px;
+    width: 700px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cart-detail{
+    display: flex;
+    flex-direction:column;
+    height: 510px;
+    width: 500px;
+    background-color:aqua;
+}
+.cart-detail a{
+    font-size: 30px;
+    margin-top: 10px;
+    display: inline-flex;
+    justify-content: center;
+    color: #261db8;
+}
+.card-detail input{
+    width: 70px;
+}
+.c-btn{
+    width: 40px;
 }
