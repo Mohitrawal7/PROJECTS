@@ -306,70 +306,79 @@ margin: 40px 0;
 /*----cart-page----*/
 
 .cart-title{
-    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
+    font-size: 40px;
+    margin-bottom: 30px;
 
 }
 .cart-title p{
-    width:260px;
-    display: flex;
-    justify-content: center;
-    background-color:#261db8;
-    color:white;
-    border-style: groove;
+    width: 100px;
+    margin-top: 20px;
+    border: 2px solid #7BB4C4;
     border-radius: 7px;
-}
-
-.cart{
-    margin: 20px 70px;
-    width: 91%;
-    height: 700px;
     background-color: #FF714C;
     display: flex;
-    flex-direction: column;
     justify-content: center;
 }
-.topic{
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    font-size: 37px;
-    color: #A10000;
-    margin : 20px 621px;
-    border : 2px solid #55FBDC;
-}
-.cart-class{
+.cart{
     display: flex;
     justify-content: space-evenly;
-}
-.cart-image {
-    background-image: url(photo/bracelet.jpeg);
-    height: 610px;
-    width: 700px;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-color: #55FBDC;
+    border: 5px solid green;
+    border-radius: 7px;
+    height: 800px;
+    margin: 10px 100px;
 }
 
-.cart-detail{
+.cart-image{
+   
+    width: 50%;
+    height: 700px;
+display: flex;
+flex-direction: column;
+    margin-top: 20px;
+    border: 6px solid #FF714C;
+}
+.main{
+    background-image: url(photo/bracelet2.jpeg);
+    width: 600px;
+    height: 60%px;
+    size: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    border: 3px solid #261DB8;
+}
+.side{
     display: flex;
-    flex-direction:column;
-    height: 510px;
-    width: 500px;
-    background-color:aqua;
+    height: 50px;
+
 }
-.cart-detail a{
-    font-size: 30px;
-    margin-top: 10px;
-    display: inline-flex;
-    justify-content: center;
-    color: #261db8;
-}
-.card-detail input{
+.side img{
+    height: 40px;
     width: 70px;
 }
-.c-btn{
-    width: 40px;
+.cart-detail{
+    display: flex;
+    flex-direction: column;
+    width:40% ;
+    height: 1000px;
+    margin-top: 70px;
+   
+}
+.cart-detail p{
+    font-size: 40px;
+    margin-bottom:23px ;
+
+}
+.cart-detail input,select{
+    width:190px;
+    height: 20px;
+margin: 50px 0;
+}
+.cart-detail button{
+    background-color: #FF714C;
+width: 40px;
 }
