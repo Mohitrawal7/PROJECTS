@@ -328,45 +328,53 @@ margin: 40px 0;
     background-color: #55FBDC;
     border: 5px solid green;
     border-radius: 7px;
-    height: 800px;
+    height: 750px;
     margin: 10px 100px;
 }
 
 .cart-image{
    
     width: 50%;
-    height: 700px;
+    height: 650px;
 display: flex;
 flex-direction: column;
     margin-top: 20px;
     border: 6px solid #FF714C;
 }
+.cart-image h2{
+    margin-top: 70px;
+    text-align: center;
+}
 .main{
     background-image: url(photo/bracelet2.jpeg);
-    width: 600px;
-    height: 60%px;
-    size: 100px;
+    width: 500px;
+    height: 60%;
+padding-left: 100px;
+background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 300px;
-    border: 3px solid #261DB8;
+    margin: 20px 39px;
+    
 }
 .side{
     display: flex;
     height: 50px;
-
+margin: 25px 71px;
 }
 .side img{
-    height: 40px;
-    width: 70px;
+    height: 120px;
+    width: 140px;
+    margin:0 15px;
 }
 .cart-detail{
     display: flex;
     flex-direction: column;
-    width:40% ;
-    height: 1000px;
+    width:30% ;
+    height: 500px;
+    margin-left: 100px;
+    padding-left: 25px;
     margin-top: 70px;
-   
+   background-color: white;
 }
 .cart-detail p{
     font-size: 40px;
@@ -381,4 +389,12 @@ margin: 50px 0;
 .cart-detail button{
     background-color: #FF714C;
 width: 40px;
+}
+.cart-detail h3{
+    margin: 10px 0;
+    padding-left: 12px;
+}
+.cart-detail h4{
+    text-align:justify;
+    padding: 0 10px;
 }
