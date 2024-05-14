@@ -81,8 +81,11 @@ border-bottom-right-radius: 5px;
     
 }
 
-.shopping{
+.shopping {
     width: 27px;
+}
+.menu{
+    width: 25px;
 }
 
 .main-section{
@@ -388,7 +391,9 @@ margin: 50px 0;
 }
 .cart-detail button{
     background-color: #FF714C;
-width: 40px;
+width: 100px;
+border-radius: 7px;
+font-size: 20px;
 }
 .cart-detail h3{
     margin: 10px 0;
