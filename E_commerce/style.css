@@ -474,5 +474,14 @@ font-size: 20px;
     width: 80%;
     margin-left: 40%;
 }
+
+.product-page{
+    display: flex;
+
+}
+
+.login{
+    margin: 300px 300px;
+}
 }
 
