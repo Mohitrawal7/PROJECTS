@@ -409,7 +409,7 @@ font-size: 20px;
 }
 
 
-/*----for 800px sreen---*/
+/*<....----------for 800px sreen---------------->*/
 @media only screen and (max-width:800px){
 .navbar{
     margin-bottom: 10px;
@@ -482,6 +482,35 @@ font-size: 20px;
 
 .login{
     margin: 300px 300px;
+}
+.cart{
+width: 80%;
+height: 600px;
+
+}
+.cart-image{
+    height:470px;
+}
+.main{
+    width: 300px;
+    height: 300px;
+    margin-left: 10px;
+    padding-left: 0;
+}
+.side{
+margin-left: 24px;
+}
+.side img{
+    width: 50px;
+height: 50px;
+}
+.cart-detail{
+    width: 280px;   
+    margin-top: 20px;
+    margin-left: 17px;
+}
+.cart-detail input,select{
+    margin: 20px 0;
 }
 }
 
