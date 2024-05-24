@@ -85,3 +85,44 @@ for sidebar.
   display: block;
 }
 
+changing hero image.
+
+// Define the array of pages
+var pages = [
+  "page1.html",
+  "page2.html",
+  "page3.html"
+];
+
+// Define the interval time in milliseconds
+var intervalTime = 5000; // 5 seconds
+
+// Initialize the current page index
+var currentPage = 0;
+
+// Function to change the page
+function changePage() {
+  // Get the current page and remove it from the DOM
+  var currentPageEl = document.getElementById("page");
+  currentPageEl.parentNode.removeChild(currentPageEl);
+
+  // Get the next page and add it to the DOM
+  var nextPageEl = document.getElementById(pages[currentPage + 1]);
+  document.body.appendChild(nextPageEl);
+
+  // Increment the current page index
+  currentPage++;
+
+  // If we've reached the end of the array, start again from the beginning
+  if (currentPage >= pages.length) {
+    currentPage = 0;
+  }
+
+  // Set the timer to call changePage again
+  setTimeout(changePage, intervalTime);
+}
+
+// Start the page changing process
+changePage();
+
+or use hiiden element to do it. 
