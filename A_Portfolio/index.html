@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -9,34 +10,59 @@
 </head>
 <body>
     <!--navbar-->
-    <div class="flex h-14 bg-neutral-700 w-100% ">
+    <div class="container mx-auto flex items-center w-full fixed h-14 bg-neutral-700 ">
 <p class="text-white text-4xl p-2 pl-5 w-40">colorlib.</p>
-<p class="bg-neutral-800 text-gray-500 text-xl p-2 pt-3 w-36 ">+MOHIT</p>
+<p class="hidden  bg-neutral-800 text-gray-500 text-xl p-2 pt-3 w-36 ">+MOHIT</p>
 
-<div class=" flex items-center px-big  text-gray-400  ">
+<div class=" hidden flex items-center px-3  text-gray-400  ">
 <i class="fa-solid fa-desktop fa-lg h-full w-14  hover:text-white hover:bg-black "></i>
 <i class="fa-solid fa-mobile-screen-button fa-lg w-14 hover:text-white hover:bg-black "></i>
 <i class="fa-solid fa-mobile-screen-button fa-2xl  w-14 hover:text-white hover:bg-black"></i>
-<i class="fa-solid fa-cart-shopping  w-14 bg-green-400 text-white hover:bg-black"></i>
-<i class="fa-solid fa-xmark fa-lg  w-14 hover:text-white hover:bg-black"></i>
+
 </div>
+        <div>
+<i class="fa-solid fa-cart-shopping h-12 w-14 bg-green-400 text-white hover:bg-black"></i>
+<i class="fa-solid fa-xmark fa-lg h-12 w-14 hover:text-white hover:bg-black"></i>
+        </div>
     </div> 
-
+<div>
     <!--sidebar navigation-->
-<div class="flex">
+<div class="flex ">
 <!--side-->
-    <div class="flex-col items-center p-4 h-full z-1 overflow-hidden top-0 l-0 bg-gray-400 w-72">
-<img class="rounded-full h-32 " src="photos/face.JPG" alt="" >
+<i class="fa-solid fa-bars"></i>
+    <div class=" flex-col px-auto items-center justify-center h-full bg-fixed z-1 overflow-hidden bg-gray-400 w-large">
+<div class="pt-16 px-16">
+    <img class="h-28  rounded-full   items-center" src="photos/face.JPG" alt="" >
+</div>
+<p class="text-2xl text-bold px-6">Mohit Rawal</p>
+<p class="text-slate-500">UI/UX/DESIGNER IN NEPAL</p>
+<ul class="flex-col items-center justify-center text-center py-9" >
+ <li>
+    <a class="">HOME</a>
+</li>
+<li>
+    <a class="">ABOUT</a>
+</li>
+<li>
+    <a class="">Services</a>
+</li>
+<li>
+    <a class="">SKILLS</a>
+</li>
+<li>
+    <a class="">EDUCATION</a>
+</li>
+<li>
+    <a class="">WORK</a>
+</li>
+<li>
+    <a class="">BLOG</a>
+</li>
+<li>
+    <a class="">CONTACT</a>
+</li>
+  </ul>
 
-<a class="block p-3">HOME</a>
-<a class="block p-3">ABOUT</a>
-<a class="block p-3">SERVICES</a>
-<a class="block p-3">SKILLS</a>
-<a class="block p-3">EDUCATION</a>
-<a class="block p-3">EXPERIENCE</a>
-<a class="block p-3">WORK</a>
-<a class="block p-3">BLOG</a>
-<a class="block p-3">CONTACT</a>
     </div>
 
 <!--main-->
@@ -53,6 +79,7 @@
         /body>
         /html</p>
      </div>
+</div>
 
 </div>
 </body>

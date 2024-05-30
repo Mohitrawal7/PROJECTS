@@ -7,8 +7,10 @@ module.exports = {
         "sm":"480px"
       },
       spacing:{
-        "big":"62rem"
-      }
+        "big":"62rem",
+        "large":"89rem"
+      },
+      
     },
   },
   plugins: [],
