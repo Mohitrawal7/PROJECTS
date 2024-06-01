@@ -146,3 +146,75 @@ or use hiiden element to do it.
         </div>
     </div> 
 <div>
+
+
+
+<body>
+   
+    <div class="flex">
+    <!--sidebar navigation-->
+
+<!--side-->
+<i id="sidebar" class="fa-solid fa-bars"></i>
+    <div id="menu" class="hidden static flex-col items-center text-center  h-full bg-fixed z-1 overflow-hidden bg-gray-400 w-80">
+<div class="pt-16 px-20">
+    <img class="h-44 w-56 rounded-full " src="photos/face.JPG" alt="" >
+</div>
+<div class="flex-col mt-10">
+    <p class="text-2xl text-bold ">Mohit Rawal</p>
+<p class="text-slate-500">UI/UX/DESIGNER IN NEPAL</p>
+
+</div>
+    
+
+<ul class="flex-col items-center justify-center text-neutral-700 py-9 " >
+ <li>
+    <a class="">HOME</a>
+</li>
+<li>
+    <a class="">ABOUT</a>
+</li>
+<li>
+    <a class="">Services</a>
+</li>
+<li>
+    <a class="">SKILLS</a>
+</li>
+<li>
+    <a class="">EDUCATION</a>
+</li>
+<li>
+    <a class="">WORK</a>
+</li>
+<li>
+    <a class="">BLOG</a>
+</li>
+<li>
+    <a class="">CONTACT</a>
+</li>
+  </ul>
+
+  <div class="text-center w-72 ">
+    <p>©Copyright ©2024 All rights reserved |
+         This template is made with  by Colorlib
+        Demo Images: Unsplash.com</p>
+  </div>
+  <div class="h-16"></div>
+    </div>
+
+<!--main-->
+     <div class="bg-white  text-center float-right">
+        <img class="fixed " src="photos/mohit2.png" alt="">
+       <div class="">
+        <p class="text-lg">Hi!</p>
+        <p class="text-lg">I'm Mohit</p>
+       </div> 
+
+     </div>
+</div>
+
+</div>
+
+<!--javasript connect-->
+<script src="app.js"></script>
+</body>-->
