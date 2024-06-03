@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        'main':"url('photos/main2.jpg')"
+        'main':"url('photos/main2.jpg')",
+        'sky':"url('photos/sky.jpg')"
       },
       screens:{
         "sm":"480px"
