@@ -7,6 +7,9 @@ module.exports = {
         'main':"url('photos/main2.jpg')",
         'sky':"url('photos/sky.jpg')"
       },
+      borderWidth:{
+        "big":"24px"
+      },
       screens:{
         "sm":"480px"
       },
