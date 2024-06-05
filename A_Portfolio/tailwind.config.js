@@ -5,7 +5,9 @@ module.exports = {
     extend: {
       backgroundImage:{
         'main':"url('photos/main2.jpg')",
-        'sky':"url('photos/sky.jpg')"
+        'sky':"url('photos/sky.jpg')",
+        'back':"url('photos/bracelet.jpeg')",
+        'back1':"url('photos/watch.jpeg')"
       },
       borderWidth:{
         "big":"24px"
