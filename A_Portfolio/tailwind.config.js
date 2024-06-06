@@ -11,7 +11,8 @@ module.exports = {
         'back1':"url('photos/watch.jpeg')"
       },
       borderWidth:{
-        "big":"48px"
+        "big":"36px",
+        "large":"48px"
       },
       screens:{
         "sm":"480px"

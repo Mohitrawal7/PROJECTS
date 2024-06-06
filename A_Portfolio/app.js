@@ -11,7 +11,7 @@ const stuff4= document.querySelector("#stuff4");
 
 sideBar.addEventListener("click",()=>{
     menu.classList.toggle("hidden")
-    sideBar.classList.toggle("bg-white")
+    sideBar.classList.toggle("white")
 })
 
 stuff1.addEventListener("click",()=>{
