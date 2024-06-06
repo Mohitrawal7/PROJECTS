@@ -31,7 +31,6 @@ stuff4.addEventListener("click",()=>{
     stuff4.classList.toggle("bg-blue");
 })
 
-
 /*hLinks.forEach(link=>{
     link.addEventListener("click",()=>{
         menu.classList.toggle("hidden");
