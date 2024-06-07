@@ -10,7 +10,11 @@ module.exports = {
         'back':"url('photos/bracelet.jpeg')",
         'back1':"url('photos/watch.jpeg')",
         'main1':"url('photos/main1.jpg')",
-        'main4':"url('photos/main4.jpg')"
+        'main4':"url('photos/main4.jpg')",
+        'sea':"url('photos/sea.jpg')",
+        'coast':"url('photos/coast.jpg')",
+        'tree':"url('photos/tree.jpg')",
+        'rock':"url('photos/rock.jpg')"
       },
       borderWidth:{
         "big":"36px",
