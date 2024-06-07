@@ -37,3 +37,12 @@ stuff4.addEventListener("click",()=>{
         hamburger.classList.toggle("bg-white");
     })
 })*/
+var imageSources =["main1.jpg"];
+var index = 0;
+setInterval (function(){
+    if(index === imageSources.length){
+        index = 0;
+    }
+    document.getElementById("image").src = imageSources[index];
+    index++;
+} , 2000 );
