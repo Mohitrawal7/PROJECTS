@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        'main':"url('photos/main4.jpg')"
+        'main':"url('photos/img10.webp')"
       },
     },
   },
