@@ -5,18 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pharmacy</title>
-    <link rel="stylesheet" href="style.css" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css" integrity="sha512-UuQ/zJlbMVAw/UU8vVBhnI4op+/tFOpQZVT+FormmIEhRSCnJWyHiBbEVgM4Uztsht41f3FzVWgLuwzUqOObKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <link rel="stylesheet" href="swiper-bundle.min.css"/>
+  
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="style1.css" >
+
 </head>
 <body class="mx-0 my-1">
     <div class="flex bg-white h-12 p-2 pl-4">
-        <p class="text-2xl text-black"> <strong class="text-green-600">PHARMA</strong>TIVE</p>
-    <ul class=" hidden md:flex">
+        <p class="text-2xl text-black"> <strong class="text-green-600 ">PHARMA</strong>TIVE</p>
+    <ul class=" hidden md:flex items-center pl-5 gap-3">
        <li><a>Home</a></li> 
         <li><a>Store</a></li>
         <li class="dropdown"><a>Products</a>    
-        <ul class="">
+        <ul class="hidden">
         <li><a>Supplements</a></li>
         <li><a>Vitamins</a>
         <ul>
@@ -35,18 +41,18 @@
     </ul>
     <i class=" m-2 absolute fa-solid fa-magnifying-glass right-10"></i>
 
-    <i id="sidebar" class="absolute right-2 fa-solid fa-bars m-2 "></i>
+    <i id="sidebar" class="md:hidden absolute right-2 fa-solid fa-bars m-2 "></i>
     
     <div id="menu" class="hidden absolute w-40 right-0 bg-white z-20">
-    <p><strong class="text-green-600">PHARMA</strong>TIVE</p>
+    <p><strong class="text-[#75b239]">PHARMA</strong>TIVE</p>
     <ul>
         <li><a>Home</a></li> 
         <li><a>Store</a></li>
-        <li class="dropdown"><a>Products</a>    
-        <ul class="hidden ">
+        <li id="hasChildren" class=" "><a>Products</a>    
+        <ul id="dropdown" class=" hidden hover:visible hover:text-green-700 ">
         <li><a>Supplements</a></li>
-        <li><a>Vitamins</a>
-        <ul class="hidden">
+        <li id="hasChildren" ><a>Vitamins</a>
+        <ul id="dropdown" class="hidden">
             <li><a>Supplements</a></li>
             <li><a>Vitamins</a>
             <li><a>Diet & Nutrient</a></li>
@@ -70,22 +76,125 @@
 <p class="w-32 text-green-400 bg-white border-2 border-white p-3 mt-10 ml-24 hover:text-white hover:bg-transparent ">Shop Now</p>
     </div>
 
-    <div class="flex">
+    <div class="md:flex md:gap-6 mt-7">
+        <div class=" p-4 text-green-400 gap-y-7"> 
+            <div class="w-20 h-16 items-center bg-neutral-100"><i class="fa-light fa-pills fa-3xl" style="color: #24ff65;"></i> 
+                <i class="fa-light fa-truck" style="color: #00ff40;"></i>
+            </div>
+            <p class="text-lg">Free Delivery</p>
+            <p class="my-3 text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum voluptates excepturi neque labore .</p>
+            <a >Learn more <i class=" ml-3 fa-light fa-greater-than"></i>  </a>
+        </div>
 
+        <div class=" p-4 text-green-400 gap-y-7"> 
+            <div class="w-20 h-16 items-center bg-neutral-100"><i class="fa-light fa-pills fa-3xl" style="color: #24ff65;"></i> 
+                <i class="fa-light fa-truck" style="color: #00ff40;"></i>
+            </div>
+            <p class="text-lg">Free Delivery</p>
+            <p class="my-3 text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum voluptates excepturi neque labore .</p>
+            <a >Learn more  <i class=" ml-3 fa-light fa-greater-than"></i></a>
+
+        </div>
+
+        <div class=" p-4 text-green-400 gap-y-7"> 
+            <div class="w-20 h-16 items-center bg-neutral-100"><i class="fa-light fa-pills fa-3xl" style="color: #24ff65;"></i> 
+                <i class="fa-light fa-truck" style="color: #00ff40;"></i>
+            </div>
+            <p class="text-lg">Free Delivery</p>
+            <p class="my-3 text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum voluptates excepturi neque labore .</p>
+            <a >Learn more  <i class=" ml-3 fa-light fa-greater-than"></i> </a>
+        </div>
     </div>
 
 
+    <div class="md:flex">
+        <!--leftside-->
+        <div class="bot">
+        <p class="text-3xl pl-10">Happy <strong class="text-[#75b239] ">Customers</strong></p>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="photos/main4.jpg" alt="" class="card-img" >
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="description">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio voluptates sed dolorum excepturi iure eaque, aut unde."</p>
+                            <p class="name">Andrew Neel</p>
+                        </div>
+                    </div>
+        
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="photos/main4.jpg" alt="" class="card-img" >
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="description">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio voluptates sed dolorum excepturi iure eaque, aut unde."</p>
+                            <p class="name">Andrew Neel</p>
+                        </div>
+                    </div>
+        
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="photos/main4.jpg" alt="" class="card-img" >
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="description">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio voluptates sed dolorum excepturi iure eaque, aut unde."</p>
+                            <p class="name">Andrew Neel</p>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-btn"></div>
+            <div class="swiper-button-prev swiper-btn"></div>
+            <div class="swiper-pagination swipe-pg"></div>
+        </div>
+        
+        </div>
+        
+        
+        <div>
+            <p class="text-3xl pl-10 m-4 m">Why <strong class="text-[#75b239] ">Us</strong></p>
+            <div class="flex ">
+                <div class="w-32 h-20 rounded-full bg-[#75b239] mx-6 p-5 pl-7 text-3xl text-white ">1</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio voluptates sed dolorum excepturi iure eaque, aut unde.</p>
+            </div>
+            <div class="flex mt-6 ">
+                <div class="w-32 h-20 rounded-full bg-[#75b239] mx-6 p-5 pl-7 text-3xl text-white ">2</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio voluptates sed dolorum excepturi iure eaque, aut unde.</p>
+            </div>
+            <div class="flex mt-6">
+                <div class="w-32 h-20 rounded-full bg-[#75b239] mx-6 p-5 pl-7 text-3xl text-white ">3</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio voluptates sed dolorum excepturi iure eaque, aut unde.</p>
+            </div>
+        </div>
+        
+        </div>
+        
+        
+        
+        
 
 
 
 
-    <div class="mt-16 bg-neutral-200 md:flex justify-start  md:gap-10">
-        <div class="">
-            <p class="text-2xl mb-5">About <strong class="text-green-600"> Pharmative</strong></p>
+    <div class=" bg-neutral-100 mt-10 md:flex justify-start  md:gap-32 p-3">
+        <div class="md:w-[34%] mt-10">
+            <p class="text-2xl mb-5">About <strong class="text-[#75b239]"> Pharmative</strong></p>
             <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio voluptates sed dolorum excepturi iure eaque, aut unde.</p>
         </div>
-        <div>
-            <p class="text-2xl mb-5">Navigation</p>
+        <div class="mt-10">
+            <p class="text-2xl mb-5 ">Navigation</p>
             <ul>
                 <li>Supplements</li>
                 <li>Vitamins</li>
@@ -93,16 +202,19 @@
                 <li>Tea & Coffee</li>
             </ul>
         </div>
-        <div>
-        <p class="text-2xl mb-5">Contact Info</p>
-        <p>203 Fake St. Mountain View,San Francisco,California,USA </p>
+        <div class="mt-10 right-0">
+        <p class="text-2xl mb-5 ">Contact Info</p>
+        <p class="">203 Fake St. Mountain View,San Francisco,California,USA </p>
         <p>+2 392 3929 210</p>
         <p>emailaddress@domain.com</p>
         </div>
     </div>
 
-    <footer class="text-center text-slate-500 mt-16">Copyright © 2024 All rights reserved | This template is made with  by <strong class="text-green-500">Colorlib</strong></footer>
+    <footer class=" bg-neutral-100 text-center text-slate-500 py-24 ">Copyright © 2024 All rights reserved | This template is made with  by <strong class="text-green-500">Colorlib</strong></footer>
+
+</body>
+
+<script src="swiper-bundle.min.js"></script>
 <!--javascript connect-->
 <script src="all.js"></script>
-</body>
 </html>
