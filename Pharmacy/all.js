@@ -5,7 +5,7 @@ const hasChildren = document.querySelector("#hasChildren");
 
 sideBar.addEventListener("click",()=>{
     menu.classList.toggle("hidden")
-    sideBar.classList.toggle("white")
+    sideBar.classList.toogle("blue")
 });
 
 hasChildren.addEventListener("click",()=>{
@@ -26,4 +26,21 @@ var swiper = new Swiper(".slide-content", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  //swiper for products
+  var swiper = new Swiper(".slide1-content", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper1-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper1-button-next",
+      prevEl: ".swiper1-button-prev",
+    },
+
+  });
+
   
