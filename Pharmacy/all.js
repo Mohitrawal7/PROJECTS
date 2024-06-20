@@ -44,3 +44,16 @@ var swiper = new Swiper(".slide-content", {
   });
 
   
+  //cart number
+  const plus= document.querySelector("#plus");
+  const minus= document.querySelector("#minus");
+  var num= document.querySelector("#num");
+
+  plus.addEventListener("click",()=>{
+    num=num+1;
+  });
+var num=1;
+  if(plus.clickable){
+    num=num+1
+  }
+  

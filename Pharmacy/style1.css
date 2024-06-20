@@ -58,3 +58,24 @@ margin-top: 12px;
 .swiper-btn{
     color:transparent;
 }
+
+.wrapper{
+    max-height: px;
+    border:  solid back;
+  
+   /* min-width: 110px;
+    height: 110px;
+    line-height: 110px;*/
+ overflow-x: auto;
+ margin: 10px;
+}
+.wrapper::-webkit-scrollbar{
+    width: 0;
+    columns: black;
+    height: 20px;
+}
+.wrapper {    
+    height: auto; 
+    text-align: cener;
+    background-color:white;
+}

@@ -6,6 +6,12 @@ module.exports = {
       backgroundImage:{
         'main':"url('photos/img10.webp')"
       },
+      aspectRatio:{
+       
+      },
+      width:{
+        "large":"1000px"
+      },
     },
   },
   plugins: [],
