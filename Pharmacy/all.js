@@ -2,15 +2,23 @@ const sideBar= document.querySelector("#sidebar");
 const menu =document.querySelector("#menu");
 const dropDown = document.querySelector("#dropdown");
 const hasChildren = document.querySelector("#hasChildren"); 
+const dropDown1 = document.querySelector("#dropdown1");
+const hasChildren1 = document.querySelector("#hasChildren1"); 
+
+
 
 sideBar.addEventListener("click",()=>{
-    menu.classList.toggle("hidden")
-    sideBar.classList.toogle("blue")
+  menu.classList.toggle("hidden")
+  sideBar.classList.toogle("blue")
 });
 
 hasChildren.addEventListener("click",()=>{
     dropDown.classList.toggle("hidden")
-})
+});
+
+hasChildren1.addEventListener("click",()=>{
+  dropDown1.classList.toggle("hidden")
+});
 
 //swiper 
 var swiper = new Swiper(".slide-content", {
@@ -56,4 +64,24 @@ var num=1;
   if(plus.clickable){
     num=num+1
   }
+
+
+  //store price range
+
+  const rangeInput = document.querySelectorAll(".range-input input"),
+  progress = document.querySelector(".slider .proggress");
+
+  rangeInput.forEach(input=>{
+    input.addEventListener("input", ()=>{
+      //getting 2 ranges values and parsing them to number
+      let minVal = parseInt(rangeInput[0].value),
+      maxVal = parseInt(rangeInput[1].value);
+
+      let percent=(minVal/rangeInput[0].max)*100;
+      console.log(percent);
+
+        //progress.style.left = (minVal / rangeInput[0].max)*100 + "%";
+        progress.style.right = 100 - (maxVal / rangeInput[1].max)*100 + "%";
+      });
+  })
   
