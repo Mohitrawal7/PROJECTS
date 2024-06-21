@@ -9,7 +9,7 @@ const hasChildren1 = document.querySelector("#hasChildren1");
 
 sideBar.addEventListener("click",()=>{
   menu.classList.toggle("hidden")
-  sideBar.classList.toogle("blue")
+ 
 });
 
 hasChildren.addEventListener("click",()=>{
