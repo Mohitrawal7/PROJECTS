@@ -9,7 +9,67 @@
     <link rel="stylesheet" href="style.css" >
     <link rel="stylesheet" href="style1.css" >
 </head>
-<body>
+
+    <body class="mx-0 my-1">
+
+        <div class="flex bg-white h-20 items-center p-2 pl-4">
+            <p class="text-2xl text-black"> <strong class="text-[#75b239] ">PHARMA</strong>TIVE</p>
+        <ul class=" hidden md:flex items-center pl-52 gap-2">
+            <li><a href="index.html" >Home</a></li> 
+            <li class="ml-4"><a href="store.html">Store</a></li>
+            <li  class="ml-4 haschild "><a>Products</a>    
+            <ul  class=" drop border-t-2 border-t-[#75b239] bg-white  mt-2 w-48 pl-4 absolute ">
+            <li><a class="">Supplements</a></li>
+            <li  class="haschildr "><a>Vitamins</a>
+                <ul class="dropd border-t-2 border-t-[#75b239] absolute bg-white -mt-6 ml-44   w-44 pl-4  ">
+                    <li><a>Supplements</a></li>
+                    <li><a>Vitamins</a>
+                    <li><a>Diet & Nutrient</a></li>
+                    <li><a>Tea & Coffee</a></li>
+                    </ul>
+                </li>
+            <li class="apl "><a>Diet & Nutrient</a></li>
+            <li><a>Tea & Coffee</a></li>
+            </ul>
+            </li>
+            
+            <li class="ml-4"><a href="about.html">About</a></li>
+            <li class="ml-4"><a href="contact.html">Contact</a></li>
+           
+        </ul>
+        
+       <div class="absolute right-6">
+         <i class=" m-2  fa-solid fa-magnifying-glass right-10"></i>
+       <a href="cart.html"> <i class="fa-solid fa-bag-shopping mx-4"></i></a>
+        <i  id="sidebar" class="md:hidden fa-solid fa-bars m-2 "></i>
+    </div>
+    
+        <div id="menu" class="hidden absolute w-64 right-0 bg-white  z-20 top-0  p-6 pt-16 rounded-sm  overflow-y-auto">
+        <p class="text-2xl absolute top-10 "><strong class="text-[#75b239]">PHARMA</strong>TIVE</p>
+        <ul class="mt-10 text-xl ">
+            <li ><a >Home</a></li> 
+            <li class="my-4"><a href="store.html">Store</a></li>
+            <li class=" "><a>Products</a>   <i id="hasChildren" class=" pl-20 fa-solid fa-angle-down"></i> 
+            <ul id="dropdown" class=" hidden  bg-none p-4  text-base">
+            <li><a>Supplements</a></li>
+            <li  class="my-3"><a>Vitamins</a><i id="hasChildren1" class=" pl-20 fa-solid fa-angle-down"></i> 
+            <ul id="dropdown1" class=" hidden p-3">
+                <li><a>Supplements</a></li>
+                <li class="my-4"><a>Vitamins</a>
+                <li><a>Diet & Nutrient</a></li>
+                <li class="mt-4"><a>Tea & Coffee</a></li>
+            </ul>
+            </li>
+            <li><a>Diet & Nutrient</a></li>
+            <li class="mt-4"><a>Tea & Coffee</a></li>
+            </ul>
+            </li>
+            <li class="my-4"><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+    </div>
+
 
 
     <div class="bg-neutral-100 h-12 content-center  pl-4" >
