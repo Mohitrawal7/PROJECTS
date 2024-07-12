@@ -65,7 +65,7 @@ writeText(e){let t=this;return new Promise(r=>
     const exampleTyping = new AutoTyping('#text', exampleText, {
         typeSpeed: 50,
         deleteSpeed: 50,
-        waitBeforeDelete: 2000,
+        waitBeforeDelete: 1000,
         waitBetweenWords: 500,
     });
     exampleTyping.start()
