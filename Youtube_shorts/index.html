@@ -14,11 +14,11 @@
   
     <div class="flex  gap-3"> 
 
-        <div class=" absolute hidden  left-0  pt-4 pl-6 h-screen md:w-[18%] w-[40%] overflow-y-auto over text-white bg-black ">
+        <div id="main" class=" absolute hidden  left-0  pt-4 pl-6 h-screen md:w-[18%] w-[40%] overflow-y-auto over text-white bg-black ">
             <div class="flex gap-4 ">
-                <i class="fa-solid fa-bars    bg-stone-500 w-10 p-3 rounded-full" style="color: #fff;"></i>
-               <img src="youtube.png" alt="" class="w-8 h-8 ">
-                <p class="text-white text-2xl">Youtube</p>
+              
+                <img src="youtube.png" alt="" class="w-8 h-8 ml-10 -mt-2 ">
+                <p class="text-white text-2xl -mt-2">Youtube</p>
                 </div>
                <ul class="mt-10  ">
                 <li class="flex gap-7 h-10 extra">
@@ -217,11 +217,11 @@
 
         <div class="flex gap-3 md:w-[80%] items-center ">
 
-        <i class="fa-solid fa-bars    bg-stone-500 w-10 p-3 rounded-full" style="color: #fff;"></i>
-        <img src="youtube.png" alt="" class="w-8 h-8 ">
+        <i id="hidden" class="fa-solid fa-bars absolute   bg-stone-500 w-10 p-3 rounded-full" style="color: #fff;"></i>
+        <img src="youtube.png" alt="" class="w-8 h-8  ml-12">
         <p class="text-white text-2xl">Youtube</p>
         <div class="md:w-full w-[36%] ml-[7%] md:ml-[20%] flex ">
-        <input placeholder="Search " class="border-2 bg-black  border-stone-500 rounded-l-full rounded-r-full w-full pl-4 py-2">
+        <input placeholder="Search " type="text" class="text-white border-2 bg-black  border-stone-500 rounded-l-full rounded-r-full w-full pl-4 py-2">
         <i class="fa-solid fa-magnifying-glass bg-stone-500 h-12 w-16 rounded-r-full pt-4 -ml-16 mt-0 pl-5 border-2 border-stone-500 " style="color:#fff"></i>
     </div>
     <i class="fa-solid fa-microphone p-3 rounded-full bg-stone-500 w-10 h-10" style="color: #ffffff;"></i>
@@ -249,11 +249,11 @@
             <ul class="h-[80%] ">
             <video class=" h-[100%] z-10 " src="main.mp4" autoplay="{true}" loop ></video>
             </ul>
-            <ul class="flex  ">
-                <i class="fa-solid fa-play  " style="color: #ffffff;"></i>
-                
+            <ul class="flex gap-4 ml-7 -mt-[78vh] ">
+                <i class="fa-solid fa-play w-12 h-12 pl-5 pt-4 rounded-full  bg-opacity-50 bg-neutral-500  hover:bg-black" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-volume-high fa-flip-vertical w-12 h-12 p-4  rounded-full  bg-opacity-50 bg-neutral-500 hover:bg-black hover:w-40" style="color: #f7f7f8;"></i>
             </ul>
-            <ul class="text-white -mt-24  ml-4">
+            <ul class="text-white mt-[56vh]  ml-4">
                <li class="flex gap-2">
                 <img src="face.JPG" class="w-8 h-8 rounded-full">
                 <p>@querty23uu</p>
@@ -262,34 +262,36 @@
                <li>> Secret Script for Nature! </li>
                <li>Purely Beautiful Waterfall at Kanchanpur</li> 
             </ul>
+
             </div>
-            <div class="text-white pt-28 -ml-28">
+
+            <div class="text-white pt-28 -ml-28 -mt-6">
                <ul>
-                <li class="flex gap-6 mt-4">
-                    <p class="w-20 h-8 bg-gray-500 rounded-md pl-4 mt-2 pt-1">I like it</p>
+                <li class=" flex gap-6 mt-4">
+                    <p id="comm " class=" w-20 h-8 bg-gray-500 rounded-md pl-4 mt-2 pt-1">I like it</p>
                     
-                    <i class="fa-solid fa-thumbs-up fa-xl w-12 h-12 rounded-full pl-3 pt-6 bg-neutral-500" style="color: #ffffff;"></i>
+                    <i id="likedd" class="fa-solid fa-thumbs-up fa-xl w-12 h-12 rounded-full pl-3 pt-6 bg-neutral-500" style="color: #ffffff;"></i>
                 </li>
                 <p class="ml-28 pl-2">23</p>
 
                 <li class="flex gap-6 -ml-7 mt-4">
                     <p class="w-28 h-8 bg-gray-500 rounded-md pl-4 mt-2 pt-1">I dislike it</p>
                     
-                    <i class="fa-solid fa-thumbs-down fa-xl w-12 h-12 rounded-full pl-3 pt-6 bg-neutral-500" style="color: #ffffff;"></i>
+                    <i id="dislike" class="fa-solid fa-thumbs-down fa-xl w-12 h-12 rounded-full pl-3 pt-6 bg-neutral-500" style="color: #ffffff;"></i>
                 </li>
                 <p class="ml-24 pl-3">Dislike</p>
                
                 <li class="flex gap-6 mt-4">
                     <p class="w-24 h-8 bg-gray-500 rounded-md pl-4 -ml-4 mt-2 pt-1">Comments</p>
                     
-                    <i class="fa-regular fa-message fa-xl w-12 h-12 rounded-full pl-3 pt-6 bg-neutral-500" style="color: #ffffff;"></i>
+                    <i id="comments" class="fa-regular fa-message fa-xl w-12 h-12 rounded-full pl-3 pt-6 bg-neutral-500" style="color: #ffffff;"></i>
                 </li>
                 <p class="ml-28 pl-">409</p>
 
                 <li class="flex gap-6 mt-4">
                     <p class="w-20 h-8 bg-gray-500 rounded-md pl-4 mt-2 pt-1">Share</p>
                     
-                    <i class="fa-solid fa-share fa-xl w-12 h-12 rounded-full pl-3 pt-6 bg-neutral-500" style="color: #ffffff;"></i>
+                    <i id="share" class="fa-solid fa-share fa-xl w-12 h-12 rounded-full pl-3 pt-6 bg-neutral-500" style="color: #ffffff;"></i>
                 </li>
                 <p class="ml-24 pl-3">Share</p>
                 <li class=" pl-2 ml-24 mt-4">
