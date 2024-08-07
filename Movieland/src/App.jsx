@@ -13,7 +13,7 @@ const [movies,setMovies] = useState([]);
 const [searchTerm,setSearchTerm] = useState("");
 
 useEffect(() =>{
-  searchMovies('anaconda'); 
+  searchMovies(''); 
 },[]);
 
 
