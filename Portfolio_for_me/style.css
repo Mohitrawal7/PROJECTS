@@ -1,0 +1,365 @@
+/* Basic Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* For smooth scrolling */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Choose a nice modern font later */
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden; /* Clear floats */
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.2rem; text-align: center; margin-bottom: 2rem; color: #1e3a8a; /* Dark Blue */ }
+h3 { font-size: 1.5rem; }
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #1e90ff; /* Dodger Blue */
+}
+
+/* Navigation Bar */
+.navbar {
+    background: #fff; /* White background for navbar */
+    color: #333;
+    padding: 1rem 0;
+    position: fixed; /* Sticky navbar */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1e3a8a; /* Dark Blue */
+}
+
+.navbar .nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-menu li {
+    margin-left: 20px;
+}
+
+.navbar .nav-menu a {
+    color: #333;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-menu a:hover {
+    color: #1e90ff; /* Dodger Blue on hover */
+}
+
+.hamburger {
+    display: none; /* Hidden by default, shown on mobile */
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Hero Section */
+.hero {
+    background: #1e3a8a; /* Dark Blue background */
+    color: #fff; /* White text */
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px; /* Account for fixed navbar height */
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero .subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.hero .highlight {
+    color: #60a5fa; /* Lighter Blue for highlight */
+}
+
+.hero-buttons .btn {
+    margin: 0 0.5rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #1e90ff; /* Dodger Blue */
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #1c80e0; /* Darker Dodger Blue */
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #e0e0e0; /* Light Gray */
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.btn-secondary:hover {
+    background-color: #d0d0d0;
+    transform: translateY(-2px);
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Sections General Styling */
+section {
+    padding: 80px 0; /* Add top padding to avoid navbar overlap */
+}
+
+/* About Section */
+.about-section {
+    background: #fff; /* White background */
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.profile-pic {
+    width: 150px; /* Adjust as needed */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #1e3a8a;
+}
+
+
+/* Skills Section */
+.skills-section {
+    background: #eef2f9; /* Very light blue/gray */
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    text-align: center;
+}
+
+.skill-item {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+/* Projects Section */
+.projects-section {
+    background: #fff; /* White background */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: #f9f9f9; /* Off-white for cards */
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px; /* Adjust as needed */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    color: #1e3a8a;
+}
+
+.project-tags {
+    margin-top: auto; /* Pushes tags and links to the bottom */
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-tags span {
+    background: #e0e7ff; /* Light indigo */
+    color: #3730a3; /* Indigo */
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+.project-links .btn {
+    margin-right: 0.5rem;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #1e3a8a; /* Dark Blue background */
+    color: #fff;
+    text-align: center;
+}
+.contact-section h2 {
+    color: #fff;
+}
+.contact-section p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+.contact-links .btn {
+    margin: 0.5rem;
+}
+.contact-links .btn-primary { /* Override for contact section */
+    background-color: #fff;
+    color: #1e3a8a;
+}
+.contact-links .btn-primary:hover {
+    background-color: #f0f0f0;
+}
+.contact-links .btn-secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.contact-links .btn-secondary:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+
+/* Footer */
+.footer {
+    background: #333; /* Dark Gray footer */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-menu {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .navbar .nav-menu.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .navbar .nav-menu li {
+        margin: 0.5rem 0;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon */
+        position: absolute;
+        top: 1.2rem;
+        right: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-pic {
+        margin-bottom: 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack projects on smaller screens */
+    }
+
+    section {
+      padding: 60px 0;
+    }
+}

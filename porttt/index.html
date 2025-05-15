@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts (Example: Poppins & Open Sans) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- ======== NAVIGATION BAR ======== -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="nav-logo">Mohit</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+             <img class="moon" src="images/moon.png" class=" hidden md:block mr-7 w-8 cursor-pointer " alt="">
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======== HERO SECTION ======== -->
+    <header id="home" class="hero section">
+        <div class="container hero-content">
+            <h1>Hi, I'm <span class="highlight-name">Your Name</span></h1>
+            <p class="hero-subtitle">Full-Stack Developer | React | Java | Tailwind CSS</p>
+            <p class="hero-description">I design and build responsive, scalable, and user-friendly web applications, bringing ideas to life with clean code and modern technologies.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View My Projects</a>
+                <a href="YOUR_RESUME_LINK.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-download"></i> Download Resume</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======== ABOUT ME SECTION ======== -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-image-container">
+                    <img src="images/mohit.jpg" alt="Your Name" class="about-image">
+                </div>
+                <div class="about-text">
+                    <h3>Hello! I'm Mohit Rawal.</h3>
+                    <p>I am a passionate and results-driven Full-Stack Developer with a strong foundation in creating dynamic web applications. My journey into the world of code started with [briefly mention your inspiration or starting point], and I've been captivated by the power of technology to solve real-world problems ever since.</p>
+                    <p>I specialize in front-end technologies like <strong>React</strong> and <strong>Tailwind CSS</strong> for building intuitive user interfaces, and back-end development using <strong>Java</strong> with frameworks like <strong>Spring Boot</strong> to create robust and scalable server-side logic. I believe in writing clean, maintainable, and efficient code.</p>
+                    <p>I'm a lifelong learner, constantly exploring new tools and techniques to enhance my skillset. I thrive in collaborative environments and I'm currently seeking challenging opportunities to contribute to innovative projects and grow as a developer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== SKILLS SECTION ======== -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">My Tech Stack</h2>
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h4><i class="fas fa-laptop-code"></i> Frontend</h4>
+                    <ul>
+                        <li><i class="fab fa-react"></i> React.js</li>
+                        <li><i class="fab fa-js-square"></i> JavaScript (ES6+)</li>
+                        <li><i class="fab fa-html5"></i> HTML5</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS3 & SASS</li>
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" class="inline-icon"> Tailwind CSS</li>
+                        <li><i class="fas fa-mobile-alt"></i> Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-server"></i> Backend</h4>
+                    <ul>
+                        <li><i class="fab fa-java"></i> Java</li>
+                        <li><img src="images/spring.png" alt="Spring Boot" class="inline-icon"> Spring Boot</li>
+                        <li><i class="fas fa-cogs"></i> RESTful APIs</li>
+                        <li><i class="fab fa-node-js"></i> Node.js (Basic)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-database"></i> Databases & Storage</h4>
+                    <ul>
+                        <li><i class="fas fa-database"></i> Drizzle</li>
+                        <li><i class="fas fa-leaf"></i> PostgreSQL</li>
+                        <!-- <li><i class="fas fa-fire"></i> Firebase (Basic)</li> -->
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-tools"></i> Tools & DevOps</h4>
+                    <ul>
+                        <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+                        <li><i class="fas fa-cogs"></i> Maven / Gradle</li>
+                        <li><i class="fab fa-docker"></i> Docker (Basic)</li>
+                        <!-- <li><i class="fas fa-tasks"></i> Agile/Scrum</li>
+                        <li><i class="fas fa-vial"></i> JUnit / Jest</li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== EXPERIENCE SECTION ======== -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <!-- Example Experience Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="timeline-content">
+                        <h3>Software Developer Intern</h3>
+                        <p class="timeline-company-date">Innovatech Solutions | Jun 2023 - Aug 2023</p>
+                        <ul>
+                            <li>Developed and maintained features for a client-facing web application using React and Spring Boot.</li>
+                            <li>Collaborated with a team of 5 developers in an Agile environment, participating in daily stand-ups and sprint planning.</li>
+                            <li>Contributed to API design and database schema updates for new modules.</li>
+                            <li>Wrote unit tests using Jest and JUnit, achieving 80% code coverage for new components.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Example Experience Item 2 (If you have more, uncomment and modify) -->
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-code"></i></div>
+                    <div class="timeline-content">
+                        <h3>Freelance Web Developer</h3>
+                        <p class="timeline-company-date">Self-Employed | Jan 2023 - May 2023</p>
+                        <ul>
+                            <li>Designed and built a responsive e-commerce frontend for a local bakery using React and Tailwind CSS.</li>
+                            <li>Integrated a third-party payment gateway.</li>
+                        </ul>
+                    </div>
+                </div>
+               
+                 <p class="no-experience" style="text-align: center; display: none;">Currently building my professional experience. Eager to contribute to exciting projects!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== PROJECTS SECTION ======== -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="images/Java app.png" alt="Project One Thumbnail" class="project-image">
+                    <div class="project-info">
+                        <h3>Online shopping (Full Stack project) </h3>
+                        <p class="project-description">
+                            A feature-rich e-commerce application allowing users to browse products, add to cart .
+                        </p>
+                        <div class="project-tech-tags">
+                            <span><i class="fab fa-react"></i> React</span>
+                            <span><i class="fab fa-java"></i> Java</span>
+                            <span><img src="images/spring.png" alt="Spring Boot" class="tag-icon"> Spring Boot</span>
+                            <span><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" class="tag-icon"> Tailwind CSS</span>
+                            <span><i class="fas fa-database"></i> PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="YOUR_PROJECT1_LIVE_LINK" target="_blank" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="YOUR_PROJECT1_GITHUB_LINK" target="_blank" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="images/Reactmenu.png" alt="Project Two Thumbnail" class="project-image">
+                    <div class="project-info">
+                        <h3>Recipe Management App (Frontend Focused)</h3>
+                        <p class="project-description">
+                            A responsive Recipe management application with features like creating, editing, deleting recipes.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span><i class="fab fa-react"></i> React</span>
+                            <span><i class="fab fa-js-square"></i> JavaScript</span>
+                            <span><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" class="tag-icon"> Tailwind CSS</span>
+                            <!-- <span><i class="fas fa-save"></i> Local Storage</span> -->
+                        </div>
+                        <div class="project-links">
+                            <a href="YOUR_PROJECT2_LIVE_LINK" target="_blank" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="YOUR_PROJECT2_GITHUB_LINK" target="_blank" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 (Example: API Project)
+                 <div class="project-card">
+                    <img src="images/project3-thumbnail.png" alt="Project Three Thumbnail" class="project-image">
+                    <div class="project-info">
+                        <h3>Blogging Platform API (Backend)</h3>
+                        <p class="project-description">
+                            A RESTful API for a blogging platform supporting CRUD operations for users, posts, and comments, with JWT-based authentication and role-based authorization.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span><i class="fab fa-java"></i> Java</span>
+                            <span><img src="https://spring.io/images/projects/spring-edf462fec682b9d48cf628eaf9e0052a.svg" alt="Spring Boot" class="tag-icon"> Spring Boot</span>
+                            <span><i class="fas fa-shield-alt"></i> Spring Security</span>
+                            <span><i class="fas fa-database"></i> MySQL</span>
+                            <span><i class="fas fa-file-alt"></i> Swagger/OpenAPI</span>
+                        </div>
+                        <div class="project-links">
+                             <a href="#" target="_blank" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> API Docs</a> 
+                            <a href="YOUR_PROJECT3_GITHUB_LINK" target="_blank" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> View Code</a>
+                        </div> 
+                    </div> 
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== EDUCATION SECTION ======== -->
+    <section id="education" class="education section">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="education-grid">
+                <div class="education-item">
+                    <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Bachelor of Science in Computer Science and Information Technology</h3>
+                    <p class="institution-date">Far Western University | Kanchanpur, Sudurpaschim</p>
+                    <p>Expected Graduation : August 2028</p>
+                    <p><em>Key Coursework: Data Structures & Algorithms, Web Development, Database Systems, Software Engineering.</em></p>
+                </div>
+                <!-- Example Certification Item (Uncomment and modify if you have one) -->
+                <!--
+                <div class="education-item">
+                    <div class="education-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>[Name of Certification, e.g., Oracle Certified Professional, Java SE Programmer]</h3>
+                    <p class="institution-date">[Issuing Organization] | Online</p>
+                    <p>Completed: Month 20XX</p>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== CONTACT SECTION ======== -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Let's Connect!</h2>
+            <p class="contact-subtitle">
+                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                Feel free to reach out if you'd like to collaborate or just say hi!
+            </p>
+            <div class="contact-methods">
+                <a href="mailto:rawalmohit12@gmail.com" class="btn btn-primary contact-btn"><i class="fas fa-envelope"></i> Email Me</a>
+                <a href="https://www.linkedin.com/in/mohit-rawal-9480a52b2/" target="_blank" class="btn btn-secondary contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/mohitrawal7" target="_blank" class="btn btn-secondary contact-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FOOTER ======== -->
+     <!-- <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/yourlinkedinprofile" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/yourgithubusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+               //   Add other social links if desired, e.g., Twitter, Medium  
+            </div>
+           <p class="copyright-text">© <span id="currentYear"></span> Your Name. All Rights Reserved.</p>
+            <p class="last-updated">Last Updated: <span id="lastUpdatedDate">October 26, 2023</span></p> // Update this manually or via script
+        </div>
+    </footer>   -->
+
+    <!-- Scroll to Top Button (Optional) -->
+    <a href="#" class="scroll-top-btn" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="script.js"></script>
+</body>
+</html>
