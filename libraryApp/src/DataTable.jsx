@@ -89,7 +89,7 @@ const handleDelete= (id) =>{
           </tr>
             ))
           }
-          {/*<tr>
+          {/* <tr>
             <td>santosh kumar singha</td>
             <td>CSIT</td>
             <td>7</td>
@@ -97,7 +97,7 @@ const handleDelete= (id) =>{
               <button className="edit">Edit</button>
               <button className="delete">Delete</button>
               </td> 
-          </tr>*/}
+          </tr> */}
         </tbody>
     </table>
     <div className="pagination"></div>
