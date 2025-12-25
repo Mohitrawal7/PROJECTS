@@ -1,17 +1,23 @@
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop";
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import Work from './components/Work'
+import Services from './components/Services'
+import About from './components/About'
+import Header from './components/Header'
+import Navbar from './components/Navbar'
+import LenisScroll from './components/LenisScroll'
 
-function App() {
-  return (
-    <>
-      <Navbar />
-      <Home />
-      <Footer />
-      <ScrollToTop />
-    </>
-  );
+export default function App() {
+    return (
+        <>
+            <LenisScroll />
+            <Navbar />
+            <Header />
+            <About />
+            <Services />
+            <Work />
+            <Contact />
+            <Footer />
+        </>
+    )
 }
-
-export default App;

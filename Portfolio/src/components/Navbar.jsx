@@ -1,155 +1,102 @@
-// import { useState } from "react";
+import { useEffect, useRef } from 'react'
 
-// const Navbar = () => {
-//   const [open, setOpen] = useState(false);
+export default function Navbar() {
+    const sideMenuRef = useRef();
+    const navRef = useRef();
+    const navLinkRef = useRef();
 
-//   const links = ["home", "about", "skills", "projects", "certificates", "contact"];
-
-//   return (
-//     <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-//       <div className="max-w-6xl mx-auto px-6 h-[70px] flex items-center justify-between">
-
-//         <a href="#home" className="text-2xl font-bold text-blue-600">
-//           Mohit
-//         </a>
-
-//         {/* Desktop */}
-//         <ul className="hidden md:flex gap-8 font-medium">
-//           {links.map((link) => (
-//             <li key={link}>
-//               <a href={`#${link}`} className="capitalize hover:text-blue-600">
-//                 {link}
-//               </a>
-//             </li>
-//           ))}
-//         </ul>
-
-//         {/* Mobile */}
-//         <button
-//           className="md:hidden text-2xl"
-//           onClick={() => setOpen(!open)}
-//         >
-//           ☰
-//         </button>
-//       </div>
-
-//       {open && (
-//         <div className="md:hidden bg-white shadow">
-//           <ul className="flex flex-col items-center gap-6 py-6">
-//             {links.map((link) => (
-//               <li key={link}>
-//                 <a
-//                   href={`#${link}`}
-//                   className="capitalize"
-//                   onClick={() => setOpen(false)}
-//                 >
-//                   {link}
-//                 </a>
-//               </li>
-//             ))}
-//           </ul>
-//         </div>
-//       )}
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
-
-
-
-
-
-
-
-import { useState, useEffect } from "react";
-
-const Navbar = () => {
-  const [open, setOpen] = useState(false);
-  const [dark, setDark] = useState(false);
-
-  const links = ["home", "about", "skills", "projects", "certificates", "contact"];
-
-  useEffect(() => {
-    const theme = localStorage.getItem("theme");
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-      setDark(true);
+    const openMenu = () => {
+        sideMenuRef.current.style.transform = 'translateX(-16rem)';
     }
-  }, []);
-
-  const toggleTheme = () => {
-    if (dark) {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    } else {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
+    const closeMenu = () => {
+        sideMenuRef.current.style.transform = 'translateX(16rem)';
     }
-    setDark(!dark);
-  };
+    const toggleTheme = () => {
 
-  return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-gray-900 shadow-md transition-colors duration-500">
-      <div className="max-w-6xl mx-auto px-6 h-[70px] flex items-center justify-between">
-        {/* Logo */}
-        <a href="#home" className="text-2xl font-bold text-blue-600">
-          Mohit
-        </a>
+        document.documentElement.classList.toggle('dark');
 
-        {/* Desktop Links */}
-        <ul className="hidden md:flex gap-8 font-medium text-gray-800 dark:text-gray-200">
-          {links.map((link) => (
-            <li key={link}>
-              <a href={`#${link}`} className="capitalize hover:text-blue-500">
-                {link}
-              </a>
-            </li>
-          ))}
-        </ul>
+        if (document.documentElement.classList.contains('dark')) {
+            localStorage.theme = 'dark';
+        } else {
+            localStorage.theme = 'light';
+        }
+    }
 
-        {/* Icons */}
-        <div className="flex items-center gap-4">
-          <button
-            onClick={toggleTheme}
-            className="text-xl transition hover:scale-110"
-          >
-            {dark ? "☀️" : "🌙"}
-          </button>
+    useEffect(() => {
 
-          <button
-            className="md:hidden text-2xl text-gray-800 dark:text-gray-200"
-            onClick={() => setOpen(!open)}
-          >
-            ☰
-          </button>
-        </div>
-      </div>
+        window.addEventListener('scroll', () => {
+            if (scrollY > 50) {
+                navRef.current.classList.add('bg-white', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm', 'dark:bg-darkTheme', 'dark:shadow-white/20');
+                navLinkRef.current.classList.remove('bg-white', 'shadow-sm', 'bg-opacity-50', 'dark:border', 'dark:border-white/30', "dark:bg-transparent");
+            } else {
+                navRef.current.classList.remove('bg-white', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm', 'dark:bg-darkTheme', 'dark:shadow-white/20');
+                navLinkRef.current.classList.add('bg-white', 'shadow-sm', 'bg-opacity-50', 'dark:border', 'dark:border-white/30', "dark:bg-transparent");
+            }
+        })
 
-      {/* Mobile Menu */}
-      {open && (
-        <div className="md:hidden bg-white dark:bg-gray-900 shadow transition-colors duration-500">
-          <ul className="flex flex-col items-center gap-6 py-6 text-gray-800 dark:text-gray-200">
-            {links.map((link) => (
-              <li key={link}>
-                <a
-                  href={`#${link}`}
-                  className="capitalize"
-                  onClick={() => setOpen(false)}
-                >
-                  {link}
+        // -------- light mode and dark mode -----------
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    }, [])
+
+    return (
+        <>
+            <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
+                <img src="./assets/header-bg-color.png" alt="" className="w-full" />
+            </div>
+
+            <nav ref={navRef} className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+
+                <a href="/">
+                    <img src="./assets/w3.png" alt="Logo" className="w-28 cursor-pointer mr-14 dark:hidden" />
+                    <img src="./assets/b3.png" alt="Logo" className="w-28 cursor-pointer mr-14 hidden dark:block" />
                 </a>
-              </li>
-            ))}
-            <button onClick={toggleTheme} className="text-xl mt-4">
-              {dark ? "☀️ Light Mode" : "🌙 Dark Mode"}
-            </button>
-          </ul>
-        </div>
-      )}
-    </nav>
-  );
-};
 
-export default Navbar;
+                <ul ref={navLinkRef} className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/30 dark:bg-transparent ">
+                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#top">Home</a></li>
+                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#about">About me</a></li>
+                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#services">Services</a></li>
+                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#work">My Work</a></li>
+                    <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#contact">Contact me</a></li>
+                </ul>
+
+                <div className="flex items-center gap-4">
+                    <button onClick={toggleTheme}>
+                        <img src="./assets/moon_icon.png" alt="" className="w-5 dark:hidden" />
+                        <img src="./assets/sun_icon.png" alt="" className="w-5 hidden dark:block" />
+                    </button>
+
+                    <a href="#contact" className="hidden lg:flex items-center gap-3 px-8 py-1.5 border border-gray-300 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full ml-4 font-Ovo dark:border-white/30">
+                        Contact
+                        <img src="./assets/arrow-icon.png" alt="" className="w-3 dark:hidden" />
+                        <img src="./assets/arrow-icon-dark.png" alt="" className="w-3 hidden dark:block" />
+                    </a>
+
+                    <button className="block md:hidden ml-3" onClick={openMenu}>
+                        <img src="./assets/menu-black.png" alt="" className="w-6 dark:hidden" />
+                        <img src="./assets/menu-white.png" alt="" className="w-6 hidden dark:block" />
+                    </button>
+
+                </div>
+                {/* -- ----- mobile menu ------  -- */}
+                <ul ref={sideMenuRef} className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo dark:bg-darkHover dark:text-white">
+
+                    <div className="absolute right-6 top-6" onClick={closeMenu}>
+                        <img src="./assets/close-black.png" alt="" className="w-5 cursor-pointer dark:hidden" />
+                        <img src="./assets/close-white.png" alt="" className="w-5 cursor-pointer hidden dark:block" />
+                    </div>
+
+                    <li><a href="#top" onClick={closeMenu}>Home</a></li>
+                    <li><a href="#about" onClick={closeMenu}>About me</a></li>
+                    <li><a href="#services" onClick={closeMenu}>Services</a></li>
+                    <li><a href="#work" onClick={closeMenu}>My Work</a></li>
+                    <li><a href="#contact" onClick={closeMenu}>Contact me</a></li>
+                </ul>
+            </nav>
+        </>
+    )
+}

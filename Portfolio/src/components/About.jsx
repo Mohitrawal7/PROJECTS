@@ -1,11 +1,23 @@
 export default function About() {
-    const tools = [
-        { name: 'vscode', icon: './assets/vscode.png', },
-        { name: 'firebase', icon: './assets/firebase.png', },
-        { name: 'mongodb', icon: './assets/mongodb.png', },
-        { name: 'figma', icon: './assets/figma.png', },
-        { name: 'git', icon: './assets/git.png', },
-    ];
+  const tools = [
+  { name: "spring", variant: "original" },
+  { name: "git", variant: "plain" },
+  { name: "react", variant: "original" },
+    { name: "javascript", variant: "plain" },
+    { name: "html5", variant: "plain" },
+    { name: "css3", variant: "plain" },
+    { name: "tailwindcss", variant: "plain" },
+    {name:"github", variant:"original" },
+    { name: "npm", variant: "original-wordmark" },
+    { name: "vscode", variant: "plain" },
+    { name: "docker", variant: "plain" },
+    { name: "postgresql", variant: "plain" },
+    {name:"postman", variant:"plain" },
+    {name:"supabase", variant:"plain" },
+    {name:"vercel", variant:"original-wordmark" }
+
+];
+
 
     const data = [
         {
@@ -38,9 +50,10 @@ export default function About() {
 
                     <div className="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
                         <img src="./assets/circular-text.png" alt="" className="w-full animate-spin_slow" />
-                        <img src="./assets/dev-icon.png" alt="" className="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+                        <img src="./assets/coding.png" alt="" className="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                     </div>
                 </div>
+
                 <div className="flex-1">
                     <p className="mb-10 max-w-2xl font-Ovo">I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
 
@@ -56,15 +69,49 @@ export default function About() {
                     </ul>
                     <h4 className="my-6 text-gray-700 font-Ovo dark:text-white/80">Tools i use</h4>
 
-                    <ul className="flex items-center gap-3 sm:gap-5">
-                        {tools.map((tool) => (
-                            <li key={tool.name} className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                                <img src={tool.icon} alt={tool.name} className="w-5 sm:w-7" />
-                            </li>
-                        ))}
-                    </ul>
+                     
+       
+           <div className="relative w-full overflow-hidden">
+  
+  {/* Left → Right */}
+  <ul className="flex items-center flex-wrap  mb-16 gap-3 sm:gap-5 overflow-hidden  ">
+    {[ ...tools].map((tool, index) => (
+      <li
+         key={`a-${index}`}
+        className="flex-shrink-0 flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg"
+        >
+         <i className={`devicon-${tool.name}-${tool.variant} colored text-3xl sm:text-4xl md:text-5xl`} />
+    </li>
+
+    ))}
+  </ul>
+
+  {/* Right → Left */}
+  {/* <ul className="absolute top-16 left-0 flex items-center overflow-hidden gap-2 sm:gap-3 animate-scrollReverse min-w-max">
+  {[...tools, ...tools].map((tool, index) => (
+    <li
+      key={`b-${index}`}
+      className="flex-shrink-0 flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg"
+    >
+      <i className={`devicon-${tool.name}-${tool.variant} colored text-3xl sm:text-4xl md:text-5xl`} />
+    </li>
+  ))}
+</ul> */}
+
+
+</div>
+
+
+
                 </div>
+
             </div>
         </div>
     )
 }
+
+
+
+
+
+
