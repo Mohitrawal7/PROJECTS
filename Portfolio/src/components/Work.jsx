@@ -1,29 +1,26 @@
-export default function Work() {
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const Work =( ) => {
     const work = [
         {
-            name: 'Frontend project',
+            name: 'Recipe website',
             icon: './assets/work1.png',
-            description: 'Web Design',
-            link: '',
+            description: 'React app',
+            link: 'https://recipe-management-ten.vercel.app/',
         },
         {
-            name: 'Geo based app',
+            name: 'Job hunting app',
             icon: './assets/work2.png',
             description: 'Ecommerce app',
-            link: '',
+            link: 'https://adhikarimarg-one.vercel.app/',
         },
         {
-            name: 'Photography site',
-            icon: './assets/work-3.png',
+            name: 'Ecommerce website',
+            icon: './assets/work3.png',
             description: 'Web Design',
             link: '',
         },
-        {
-            name: 'UI/UX designing',
-            icon: './assets/work-4.png',
-            description: 'UI/UX Design',
-            link: '',
-        }
     ];
     return (
         <div id="work" className="w-full px-[12%] py-10 scroll-mt-20">
@@ -40,14 +37,16 @@ export default function Work() {
                                 <p className="text-sm text-gray-700">{work.description}</p>
                             </div>
                             <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                              <a href={work.link} >
                                 <img src="./assets/send-icon.png" alt="" className="w-5" />
+                                </a>
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
-            <a href="/work" className="w-max flex items-center justify-center gap-2 text-gray-700 border border-gray-300 dark:border-white/25 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full py-2 px-8 mx-auto my-20 duration-300 dark:text-white">
-                Show more
+            <a href="/" className="w-max flex items-center justify-center gap-2 text-gray-700 border border-gray-300 dark:border-white/25 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full py-2 px-8 mx-auto my-20 duration-300 dark:text-white">
+                Show more (.. not implemented)
                 <img src="./assets/right-arrow-bold.png" alt="" className="w-4 dark:hidden" />
                 <img src="./assets/right-arrow-bold-dark.png" alt="" className="w-4 hidden dark:block" />
             </a>
@@ -56,3 +55,5 @@ export default function Work() {
     )
 }
 
+
+export default Work;
