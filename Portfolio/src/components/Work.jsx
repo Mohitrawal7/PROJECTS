@@ -2,14 +2,14 @@ export default function Work() {
     const work = [
         {
             name: 'Frontend project',
-            icon: './assets/work-1.png',
+            icon: './assets/work1.png',
             description: 'Web Design',
             link: '',
         },
         {
             name: 'Geo based app',
-            icon: './assets/work-2.png',
-            description: 'mobile app',
+            icon: './assets/work2.png',
+            description: 'Ecommerce app',
             link: '',
         },
         {
@@ -55,3 +55,4 @@ export default function Work() {
         </div>
     )
 }
+
