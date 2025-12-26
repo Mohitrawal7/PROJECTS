@@ -3,8 +3,8 @@ export default function Footer() {
         <div className="mt-20">
             <div className="text-center">
                 <a href="/">
-                    <img src="/assets/w3.png" alt="" className="w-36 mx-auto mb-2 dark:hidden" />
-                    {/* <img src="/assets/b3.png" alt="" className="w-36 mx-auto mb-2 hidden dark:block" /> */}
+                    <img src="/assets/w5.png" alt="" className="w-36 mx-auto mb-2 dark:hidden" />
+                    <img src="/assets/b5.png" alt="" className="w-36 mx-auto mb-2 hidden dark:block" />
                 </a>
 
 

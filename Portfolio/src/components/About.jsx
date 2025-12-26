@@ -1,4 +1,33 @@
+
+import { useEffect, useState } from "react";
+
+function useDarkMode() {
+  const [isDark, setIsDark] = useState(
+    document.documentElement.classList.contains("dark")
+  );
+
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setIsDark(document.documentElement.classList.contains("dark"));
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  return isDark;
+}
+
+
 export default function About() {
+
+   const isDark = useDarkMode();
+    console.log(isDark);
+
   const tools = [
   { name: "spring", variant: "original" },
   { name: "git", variant: "plain" },
@@ -24,19 +53,19 @@ export default function About() {
             name: 'Languages',
             icon1: './assets/code-icon.png',
             icon2: './assets/code-icon-dark.png',
-            description: 'HTML, CSS, JavaScript React Js, Next Js',
+            description: 'HTML, CSS, JavaScript React Js, SpringBoot',
         },
         {
             name: 'Education',
             icon1: './assets/edu-icon.png',
             icon2: './assets/edu-icon-dark.png',
-            description: 'B.Tech in Computer Science',
+            description: 'Bsc in CSI from Far Western University',
         },
         {
             name: 'Projects',
             icon1: './assets/project-icon.png',
             icon2: './assets/project-icon-dark.png',
-            description: 'Built more than 5 projects',
+            description: 'Built more than 4 projects',
         },
     ];
     return (
@@ -80,7 +109,7 @@ export default function About() {
          key={`a-${index}`}
         className="flex-shrink-0 flex items-center justify-center w-10 sm:w-12 md:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg"
         >
-         <i className={`devicon-${tool.name}-${tool.variant} colored text-3xl sm:text-4xl md:text-5xl`} />
+        <i className={`devicon-${tool.name}-${tool.variant} ${isDark ? "" : "colored"} text-3xl sm:text-4xl md:text-5xl`} />
     </li>
 
     ))}
