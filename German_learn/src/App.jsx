@@ -118,6 +118,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Lessons from "./pages/Lessons";
 import LessonPage from "./pages/LessonPage";
+import ReviewPage from "./pages/ReviewPage";
+import StoryPage from "./pages/StoryPage";
 
 export default function App() {
   return (
@@ -125,6 +127,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Lessons />} />
         <Route path="/lessons/:lessonId" element={<LessonPage />} />
+        <Route path="/review" element={<ReviewPage />} />
+        <Route path="/story" element={<StoryPage />} />
+        <Route path="*" element={<p className="p-6">Page not found</p>} />
       </Routes>
     </BrowserRouter>
   );
